@@ -44,3 +44,5 @@ To run the blog locally, simply use the `jekyll` command
 ```sh
 bundle exec jekyll serve
 ```
+
+The site will be running on `http://127.0.0.1:4000`
