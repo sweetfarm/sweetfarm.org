@@ -8,5 +8,9 @@ $color-warning: rgb(239, 220, 11);
 $color-failure: rgb(117, 30, 17);
 
 $color-background: $color-primary-light;
+$color-overlay-light: fade-out($color-background, 0.2);
+
+$color-header-link: darken($color-secondary-light, 10%);
+$color-header-link: darken($color-secondary-light, 5%);
 
 $color-text-base: darken($color-primary-dark, 5%);

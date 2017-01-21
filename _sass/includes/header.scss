@@ -1,0 +1,16 @@
+@import 'sizes';
+@import 'colors';
+
+header {
+	background-color: $color-overlay-light;
+	font-size: 1.5em;
+	padding: $size-unit-half;
+	nav a {
+		text-transform: uppercase;
+		padding: $size-unit-half;
+		color: darken($color-primary-light, 20%);
+		&:hover, &:focus, &:active, &.active {
+			color: $color-primary-light;
+		}
+	}
+}

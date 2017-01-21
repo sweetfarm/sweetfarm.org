@@ -29,6 +29,7 @@ em, b, strong, .font-emphasis {
 }
 
 h1, h2, h3, h4, h5, h6, .font-header {
+	text-transform: uppercase;
 	@include font-properties(900);
 }
 
@@ -56,7 +57,7 @@ h6 {
 	font-size: $size-header-6;
 }
 
-section, main, nav {
+section, main, .row {
 	width: 100%;
 	margin: 0 auto;
 	max-width: $size-content-max-width;
@@ -75,13 +76,12 @@ main {
 	}
 }
 
-section {
-	-webkit-flex-flow: row;
-	flex-flow: row;	
-}
-
-header, footer {
-	background-color: fade-out($color-background, 0.2);
+section, .row {
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	& > * {
+		flex-grow: 1;
+	}
 }
 
 @import 'includes/header';
