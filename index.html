@@ -1,5 +1,31 @@
 ---
+title: Home
 layout: default
+image: https://placekitten.com/g/1600/800
 ---
 
-Test!
+<section>
+	<copy>
+		<h1>Sweet Farm</h1>
+		<h3>An animal sanctuary in Half Moon Bay</h3>
+	</copy>
+	<aside>
+		<h1>We provide sanctuary for both farm<br>and domestic animals in need</h1>
+		<a href="/about">Learn more about our mission &raquo;</a>
+	</aside>
+</section>
+
+<section>
+	{% include article.html header='Blog Post Title' subheader='With a subtitle' 
+		href='/news/todo' image='https://placekitten.com/g/1024/500' 
+		alt_text='Check out our latest stories &raquo;' alt_href='/news' %}
+</section>
+
+<section>
+	{% include article.html header='Animal Post Title' subheader='With a subtitle' 
+		href='/our-residents/todo' image='https://placekitten.com/g/1024/500' size='half'
+		alt_text='Meet more animal ambassadors &raquo;' alt_href='/our-residents' %}
+	{% include article.html header='Find ways to help' subheader='Become a sponsor today' 
+		href='/get-involved' image='https://placekitten.com/g/1024/500' size='half'
+		alt_text='Learn about sponsorship options &raquo;' alt_href='/get-involved' %}
+</section>

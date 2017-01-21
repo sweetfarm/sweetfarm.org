@@ -1,16 +1,20 @@
 # Site settings
 title: Sweet Farm
-email: support@sweetfarm.org
 description: >
   An Animal Sanctuary in Half Moon Bay
 baseurl: ""
 url: "https://www.sweetfarm.org"
 
 # Social Settings
-facebook_username: SweetFarmCA
-twitter_username: TheSweetFarm
-instagram_username: TheSweetFarm
-github_username:  sweetfarm
+facebook: SweetFarmCA
+twitter: TheSweetFarm
+instagram: TheSweetFarm
+
+# Contact Settings
+email: info@sweetfarm.org
+phone: '+1 (206) 618-0406'
+address_1: 131 Tunitas Creek Road
+address_2: Half Moon Bay, CA 94109
 
 # Github Settings 
 lsi: false
