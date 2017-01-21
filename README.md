@@ -36,3 +36,11 @@ to install this dependency, along with every other tool we'll need:
 ```sh
 bundle install
 ```
+
+## Running The Blog
+
+To run the blog locally, simply use the `jekyll` command
+
+```sh
+bundle exec jekyll serve
+```
