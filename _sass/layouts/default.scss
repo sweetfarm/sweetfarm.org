@@ -1,0 +1,88 @@
+@import 'fonts';
+@import 'colors';
+@import 'sizes';
+@import 'reset';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: $color-text-base;
+	line-height: $size-line-height-base;
+	font-size: $size-font-base;	
+	height: 100%;
+	background: none center top/100vw $size-hero-height no-repeat scroll $color-background;
+}
+
+body, header, footer {
+	min-width: $size-content-min-width;
+	width: 100%;
+}
+
+body, .font-base {
+	@include font-properties;
+}
+
+em, b, strong, .font-emphasis {
+	@include font-properties(400, italic);
+}
+
+h1, h2, h3, h4, h5, h6, .font-header {
+	@include font-properties(900);
+}
+
+h1 {
+	font-size: $size-header-1;
+}
+
+h2 {
+	font-size: $size-header-2;
+}
+
+h3 {
+	font-size: $size-header-3;
+}
+
+h4 {
+	font-size: $size-header-4;
+}
+
+h5 {
+	font-size: $size-header-5;
+}
+
+h6 {
+	font-size: $size-header-6;
+}
+
+section, main, nav {
+	width: 100%;
+	margin: 0 auto;
+	max-width: $size-content-max-width;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+main {
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	& > :first-child {
+		height: $size-hero-height;
+	}
+}
+
+section {
+	-webkit-flex-flow: row;
+	flex-flow: row;	
+}
+
+header, footer {
+	background-color: fade-out($color-background, 0.2);
+}
+
+@import 'includes/header';
+@import 'includes/footer';

@@ -1,0 +1,25 @@
+$size-unit: 20px;
+$size-unit-half: $size-unit / 2;
+
+$size-font-base: 16px;
+$size-line-height-base: 1.25;
+
+$size-header-ratio: $size-line-height-base;
+$size-header-6: $size-font-base;
+$size-header-5: $size-header-6 * $size-header-ratio;
+$size-header-4: $size-header-5 * $size-header-ratio;
+$size-header-3: $size-header-4 * $size-header-ratio;
+$size-header-2: $size-header-3 * $size-header-ratio;
+$size-header-1: $size-header-2 * $size-header-ratio;
+
+$size-media-xxs: 320px;
+$size-media-xs: 360px;
+$size-media-s: 667px;
+$size-media-m: 768px;
+$size-media-lg: 960px;
+$size-media-xl: 1024px;
+
+$size-hero-height: 85vh;
+
+$size-content-max-width: $size-media-xl;
+$size-content-min-width: $size-media-xxs;
