@@ -7,6 +7,7 @@ css: /css/residents.css
 
 {% assign residents = (site.residents | sort: "title") %}
 {% for resident in residents %}
-  {% include article.html header=resident.title subheader=resident.description
-		href=resident.path image=resident.image %}
+	{% assign resident_url = (resident.url | replace_first: 'index.html', '') %}
+	{% include article.html header=resident.title subheader=resident.description
+		href=resident_url image=resident.image %}
 {% endfor %}

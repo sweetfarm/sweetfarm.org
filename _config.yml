@@ -19,6 +19,7 @@ defaults:
 collections:
   residents:
     output: true
+    permalink: /:collection/:name/index.html
 
 # Social Settings
 facebook: SweetFarmCA
