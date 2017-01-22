@@ -1,11 +1,30 @@
----
-title: Home
-layout: default
-image: /img/chicken-with-pumpkin.jpg
-css: /css/index.css
----
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Sweet Farm | Home</title>
+		<meta name="timestamp" content="2017-01-22 07:52:55 -0800">
+		<meta name="description" content="An Animal Sanctuary in Half Moon Bay
+">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<section class="text-shadow">
+		<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="stylesheet" href="/css/index.css">
+	</head>
+	<body>
+		<figure style="background-image:url('/img/chicken-with-pumpkin.jpg')"></figure>
+		<header>
+	<nav class="row font-header">
+		<a href="/">home</a>
+		<a href="/about/">about</a>
+		<a href="/residents/">our residents</a>
+		<a href="/get-involved/">get involved</a>
+		<a href="/contact/">contact</a>
+	</nav>
+</header>
+		<main><section class="text-shadow">
 	<copy>
 		<h1>Sweet Farm</h1>
 		<h4>An animal sanctuary in Half Moon Bay</h4>
@@ -18,24 +37,60 @@ css: /css/index.css
 
 <section>
 
-	{% assign post = (site.posts | first) %}
-	{% include article.html header=post.title subheader=post.description
-		href=post.url image=post.image
-		alt_text='Check out our latest stories &raquo;' alt_href='/news' %}
+	
+	<article class="size-6" style="background-image:url('/img/sturgis-and-gizmo.jpg')">
+	<a class="subject" href="/news/2017/01/22/a-love-story/">
+		<h2>A Love Story</h1>
+		<h4>One Farm, Two best friends</h3>
+	</a>
+	<a class="alt link-light text-shadow" href="/news">
+		Check out our latest stories &raquo;
+	</a>
+</article>
 
 </section>
 
 <section>
 
-	{% assign resident = (site.residents | sample) %}
-	{% assign resident_url = (resident.url | replace_first: 'index.html', '') %}
-	{% include article.html header=resident.title subheader=resident.description
-		href=resident_url image=resident.image size='half'
-		alt_text='Meet more animal ambassadors &raquo;' alt_href='/residents' %}
+	
+	
+	<article class="size-half" style="background-image:url('/img/sheep-faces.jpg')">
+	<a class="subject" href="/residents/the-sheep/">
+		<h2>The Sheep</h1>
+		<h4>Three wooly buddies</h3>
+	</a>
+	<a class="alt link-light text-shadow" href="/residents">
+		Meet more animal ambassadors &raquo;
+	</a>
+</article>
 
-	{% assign getinvolved = (site.pages | where: "title" , "Get Involved" | first) %}
-	{% include article.html header='Find ways to help' subheader='Become a sponsor today' 
-		href='/get-involved' image=getinvolved.image size='half'
-		alt_text='Learn about sponsorship options &raquo;' alt_href='/get-involved' %}
+	
+	<article class="size-half" style="background-image:url('/img/pumpkin-signs.jpg')">
+	<a class="subject" href="/get-involved">
+		<h2>Find ways to help</h1>
+		<h4>Become a sponsor today</h3>
+	</a>
+	<a class="alt link-light text-shadow" href="/get-involved">
+		Learn about sponsorship options &raquo;
+	</a>
+</article>
 
-</section>
+</section></main>
+		<footer>
+	<section>
+		<div class="flex-fixed">
+			<img id="logo" alt="sweet farm logo" src="/img/logo.png" />
+			<address class="font-emphasis">131 Tunitas Creek Road,<br>Half Moon Bay, CA 94109</address>
+			<copy>A 501(c)3 Non-Profit<br>Tax ID 47-4576350<br>Copyright 2017</copy>
+		</div>
+		<a id="map" href="https://goo.gl/maps/GavpikdCgHw"></a>
+		<aside class="flex-fixed">
+			<a title="Subscribe to our feed" class="icon-feed" href="/feed.xml"></a>
+			<a title="Like us on Facebook" class="icon-facebook" href="https://www.facebook.com/SweetFarmCA/"></a>
+			<a title="Follow us on Twitter" class="icon-twitter" href="https://twitter.com/TheSweetFarm/"></a>
+			<a title="Follow us on Insta" class="icon-instagram" href="https://www.instagram.com/TheSweetFarm/"></a>
+		</aside>
+	</section>
+</footer>
+	</body>
+</html>
