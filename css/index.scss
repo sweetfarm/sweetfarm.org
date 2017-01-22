@@ -19,6 +19,9 @@ main > section:first-child {
 		flex-grow: 0;
 		color: $color-background;
 		text-transform: uppercase;
+		h3 {
+			padding-bottom: $size-unit-half;
+		}
 		a {
 			font-size: larger;
 		}

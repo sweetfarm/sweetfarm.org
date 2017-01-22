@@ -1,0 +1,5 @@
+@import 'layouts/default';
+
+main > section:first-child h1 {
+	color: $color-title;
+}

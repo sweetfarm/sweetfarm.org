@@ -61,6 +61,10 @@ h6 {
 	font-size: $size-header-6;
 }
 
+p {
+    line-height: 2;
+}
+
 section, main, .row {
 	width: 100%;
 	margin: 0 auto;
@@ -75,7 +79,7 @@ main {
 		&:first-child {
 			margin-top: -$size-header-height;
 			height: $size-hero-height;
-			padding: ($size-header-height + $size-unit) ($size-unit * 2) $size-unit;
+			padding: ($size-header-height + $size-unit) $size-unit-double $size-unit;
 		}
 	}
 }
@@ -93,6 +97,35 @@ section, .row {
 
 .text-shadow {	
 	text-shadow: 0 0 $size-unit rgba(0,0,0,0.5);
+}
+
+.text-content {
+	padding: $size-unit $size-unit-double $size-unit-double;
+	h5, p, img {
+		width: 100%;
+		padding: $size-unit-half $size-unit;
+	}
+	h6 {
+		padding: 0 $size-unit;	
+	}
+	h5 {
+		padding-top: $size-unit-double;
+	}
+	a {
+		color: $color-content-link;
+		font-weight: 500;
+		&:hover {
+			color: $color-content-link-hover;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		border: solid 1px $color-horizonal-rule;
+		margin: $size-unit-double $size-unit 0;
+	}
+
 }
 
 .link-light {	

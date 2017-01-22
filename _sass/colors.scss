@@ -16,4 +16,8 @@ $color-overlay-light: fade-out($color-background, 0.2);
 $color-header-link: $color-blue-st-patricks;
 $color-header-link-hover: lighten($color-header-link, 10%);
 
-$color-text-base: $color-green-charlston
+$color-horizonal-rule: darken($color-white, 5%);
+
+$color-text-base: $color-green-charlston;
+$color-content-link: $color-green-lincoln;
+$color-content-link-hover: $color-green-avocado;
