@@ -26,12 +26,14 @@ css: /css/index.css
 
 <section>
 
-	{% include article.html header='Animal Post Title' subheader='With a subtitle' 
-		href='/our-residents/todo' image='https://placekitten.com/g/1024/500' size='half'
-		alt_text='Meet more animal ambassadors &raquo;' alt_href='/our-residents' %}
+	{% assign resident = (site.residents | sample) %}
+	{% include article.html header=resident.title subheader=resident.description
+		href=resident.path image=resident.image size='half'
+		alt_text='Meet more animal ambassadors &raquo;' alt_href='/residents' %}
 
+	{% assign getinvolved = (site.pages | where: "title" , "Get Involved" | first) %}
 	{% include article.html header='Find ways to help' subheader='Become a sponsor today' 
-		href='/get-involved' image='/img/pumpkin-signs.jpg' size='half'
+		href='/get-involved' image=getinvolved.image size='half'
 		alt_text='Learn about sponsorship options &raquo;' alt_href='/get-involved' %}
 
 </section>

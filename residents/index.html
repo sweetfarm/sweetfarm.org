@@ -1,0 +1,11 @@
+---
+title: Our Residents
+layout: simple
+image: /img/cows-and-goats.jpg
+css: /css/residents.css
+---
+
+{% for resident in (site.residents | sort: "title") %}
+  {% include article.html header=resident.title subheader=resident.description
+		href=resident.path image=resident.image %}
+{% endfor %}

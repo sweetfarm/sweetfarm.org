@@ -5,6 +5,21 @@ description: >
 baseurl: ""
 url: "https://www.sweetfarm.org"
 
+# Site defaults
+defaults:
+  - 
+    scope:
+      path: ""
+      type: residents
+    values:
+      layout: resident
+      css: /css/simple.css
+
+# Custom Collections
+collections:
+  residents:
+    output: true
+
 # Social Settings
 facebook: SweetFarmCA
 twitter: TheSweetFarm
@@ -22,12 +37,8 @@ safe: true
 incremental: false
 
 # Build settings
-markdown: kramdown
-
 sass:
   sass_dir: _sass
-
-#gems:
   
 exclude:
   - README.md
