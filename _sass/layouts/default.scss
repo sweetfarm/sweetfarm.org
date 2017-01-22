@@ -22,15 +22,15 @@ body, header, footer {
 }
 
 body, .font-base {
-	@include font-properties;
+	@include font-sans;
 }
 
 em, b, strong, .font-emphasis {
-	@include font-properties(500);
+	@include font-sans(500);
 }
 
 h1, h2, h3, h4, h5, h6, .font-header {	
-	@include font-properties(800);
+	@include font-sans(800);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,12 +91,8 @@ section, .row {
 	}
 }
 
-.text-glow {
-	text-shadow: 0 0 $size-unit white;
-}
-
 .text-shadow {	
-	text-shadow: 0 0 $size-unit rgba(0,0,0,0.5);
+	text-shadow: 0 0 26px rgba(0,0,0,1);
 }
 
 .text-content {

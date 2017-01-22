@@ -1,29 +1,28 @@
 ---
 ---
 
+@import 'fonts';
 @import 'layouts/default';
 @import 'includes/article';
 
 main > section:first-child {
-	position: relative;
+	text-align:center;
 	copy {
 		margin-bottom: auto;
-		h1, h3 {
-			color: $color-title;
+		color: $color-title;
+		h1 {
+			font-size: 4em;
+			@include font-handwriting;
 		}
 	}
 	aside {
 		width: 100%;
-		text-align: right;		
 		margin-top: auto;
 		flex-grow: 0;
 		color: $color-background;
 		text-transform: uppercase;
-		h3 {
+		h4 {
 			padding-bottom: $size-unit-half;
-		}
-		a {
-			font-size: larger;
 		}
 	}
 }
