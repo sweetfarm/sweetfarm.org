@@ -8,11 +8,12 @@
 }
 
 body {
+	height: 100%;
 	color: $color-text-base;
 	line-height: $size-line-height-base;
+	letter-spacing: $size-letter-spacing-base;
 	font-size: $size-font-base;	
-	height: 100%;
-	background: none center top/100vw $size-hero-height no-repeat scroll $color-background;
+	background: none center top/auto $size-hero-height no-repeat scroll $color-background;
 }
 
 body, header, footer {
@@ -25,12 +26,15 @@ body, .font-base {
 }
 
 em, b, strong, .font-emphasis {
-	@include font-properties(400, italic);
+	@include font-properties(500);
 }
 
-h1, h2, h3, h4, h5, h6, .font-header {
+h1, h2, h3, h4, h5, h6, .font-header {	
+	@include font-properties(800);
+}
+
+h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
-	@include font-properties(900);
 }
 
 h1 {
@@ -60,28 +64,51 @@ h6 {
 section, main, .row {
 	width: 100%;
 	margin: 0 auto;
-	max-width: $size-content-max-width;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+	max-width: $size-content-max-width;	
 	display: flex;
 }
 
 main {
-	-webkit-flex-flow: column;
 	flex-flow: column;
-	& > :first-child {
-		height: $size-hero-height;
+	& > section {
+		min-height: $size-section-height;
+		&:first-child {
+			margin-top: -$size-header-height;
+			height: $size-hero-height;
+			padding: ($size-header-height + $size-unit) ($size-unit * 2) $size-unit;
+		}
 	}
 }
 
 section, .row {
-	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	& > * {
 		flex-grow: 1;
 	}
+}
+
+.text-glow {
+	text-shadow: 0 0 $size-unit white;
+}
+
+.text-shadow {	
+	text-shadow: 0 0 $size-unit rgba(0,0,0,0.5);
+}
+
+.link-light {	
+	font-size: larger;
+	color: $color-link-light;
+	&:hover, &:focus {
+		color: $color-link-light-hover;
+	}
+}
+
+.flex-fixed {
+	flex-grow: 0;
+}
+
+.size-half {
+	width: 50%;
 }
 
 @import 'includes/header';

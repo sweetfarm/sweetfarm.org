@@ -2,15 +2,18 @@
 @import 'colors';
 
 header {
+	z-index: 1;
+	font-size: 1.25em;
+	position: relative;
+	padding: $size-unit-half $size-unit;
+	height: $size-header-height;
 	background-color: $color-overlay-light;
-	font-size: 1.5em;
-	padding: $size-unit-half;
 	nav a {
+		padding: $size-unit-half $size-unit;
+		color: $color-header-link;
 		text-transform: uppercase;
-		padding: $size-unit-half;
-		color: darken($color-primary-light, 20%);
 		&:hover, &:focus, &:active, &.active {
-			color: $color-primary-light;
+			color: $color-header-link-hover;
 		}
 	}
 }

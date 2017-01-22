@@ -3,3 +3,24 @@
 
 @import 'layouts/default';
 @import 'includes/article';
+
+main > section:first-child {
+	position: relative;
+	copy {
+		margin-bottom: auto;
+		h1, h3 {
+			color: $color-title;
+		}
+	}
+	aside {
+		width: 100%;
+		text-align: right;		
+		margin-top: auto;
+		flex-grow: 0;
+		color: $color-background;
+		text-transform: uppercase;
+		a {
+			font-size: larger;
+		}
+	}
+}

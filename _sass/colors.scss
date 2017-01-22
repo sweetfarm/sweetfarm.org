@@ -1,16 +1,19 @@
-$color-primary-dark: rgb(23, 35, 26);
-$color-primary-light: rgb(254, 255, 255);
-$color-secondary-dark: rgb(97, 117, 104);
-$color-secondary-light: rgb(240, 233, 156);
+$color-green-charlston: rgba(38, 38, 51, 1);
+$color-green-lincoln: rgba(54, 76, 0, 1);
+$color-green-avocado: rgba(79, 104, 9, 1);
+$color-blue-st-patricks: rgba(33, 59, 122, 1);
+$color-green-old-moss: rgba(121, 132, 55, 1);
+$color-white: white;
 
-$color-success: rgb(30, 61, 13);
-$color-warning: rgb(239, 220, 11);
-$color-failure: rgb(117, 30, 17);
+$color-title: $color-white;
 
-$color-background: $color-primary-light;
+$color-link-light: $color-white;
+$color-link-light-hover: darken($color-white, 10%); 
+
+$color-background: $color-white;
 $color-overlay-light: fade-out($color-background, 0.2);
 
-$color-header-link: darken($color-secondary-light, 10%);
-$color-header-link: darken($color-secondary-light, 5%);
+$color-header-link: $color-blue-st-patricks;
+$color-header-link-hover: lighten($color-header-link, 10%);
 
-$color-text-base: darken($color-primary-dark, 5%);
+$color-text-base: $color-green-charlston

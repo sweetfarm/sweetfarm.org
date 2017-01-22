@@ -1,0 +1,46 @@
+@import 'sizes';
+
+footer {
+	text-transform: uppercase;
+	#logo {
+		width: 100px;
+	}
+	#map {
+		background: url(/img/staticmap.jpeg) center center/auto 100% no-repeat scroll transparent;
+		margin: 0 $size-unit;
+	}
+	address {		
+		font-size: 1.5em;
+		padding: $size-unit 0;
+	}	
+	section {
+		padding: $size-unit (2 * $size-unit);
+	}
+	aside {
+		display: flex;
+		flex-direction: column;
+		padding-left: $size-unit;
+		a {
+			flex-grow: 1;
+			background: none center center/100% auto no-repeat;
+			opacity: 0.8;
+			width: 30px;
+			height: 30px;
+			&:hover {
+				opacity: 1;
+			}
+			&.icon-facebook {
+				background-image: url(/img/icon-facebook.png);
+			}
+			&.icon-twitter {
+				background-image: url(/img/icon-twitter.png);
+			}
+			&.icon-instagram {
+				background-image: url(/img/icon-instagram.png);
+			}
+			&.icon-feed {
+				background-image: url(/img/icon-feed.png);
+			}
+		}
+	}
+}
