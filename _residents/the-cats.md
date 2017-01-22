@@ -1,7 +1,7 @@
 ---
 title: The Cats
 description: Resident mouse patrol
-image: /img/cat-on-log.jpg
+image: /img/cat-on-trailer.jpg
 ---
 
 ##### Jackie

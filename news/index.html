@@ -1,0 +1,11 @@
+---
+title: Latest News
+layout: simple
+image: /img/light-through-tree.jpg
+css: /css/posts.css
+---
+
+{% for post in site.posts %}
+	{% include article.html header=post.title subheader=post.description
+		href=post.url image=post.image %}
+{% endfor %}

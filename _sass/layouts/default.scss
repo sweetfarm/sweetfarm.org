@@ -13,7 +13,18 @@ body {
 	line-height: $size-line-height-base;
 	letter-spacing: $size-letter-spacing-base;
 	font-size: $size-font-base;	
-	background: none center top/auto $size-hero-height no-repeat scroll $color-background;
+	background-color: $color-background;
+}
+
+figure {
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	display: block;
+	position: absolute;
+	background: none center top/cover no-repeat scroll;
+	height: $size-hero-height;
 }
 
 body, header, footer {
@@ -72,7 +83,15 @@ section, main, .row {
 	display: flex;
 }
 
+iframe {
+    position: relative;
+    display: block;
+    margin: $size-unit auto;
+}
+
 main {
+	z-index: 2;
+	position: relative;
 	flex-flow: column;
 	& > section {
 		min-height: $size-section-height;
@@ -92,7 +111,7 @@ section, .row {
 }
 
 .text-shadow {	
-	text-shadow: 0 0 26px rgba(0,0,0,1);
+	text-shadow: 0 0 26px rgba(0,0,0,0.5);
 }
 
 .text-content {

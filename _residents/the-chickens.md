@@ -1,7 +1,7 @@
 ---
 title: The Chickens
 description: Birds of a feather 
-image: /img/chickens-on-coop.jpg
+image: /img/chickens-around-feeder.jpg
 ---
 
 The Sweet Farm Chicken Crew is a beautiful assortment of birds. Many of our chickens are rescued from the local humane society where they were dropped off after no longer being needed or wanted in backyards and on other farms. Seeing their diversity in both colors and personalities makes the chicken yard a relaxing and enjoyable space. On any given day, you’ll find the chicken crew hard at work eating bugs, taking dirt baths and laying healthy, nutrient rich eggs. 

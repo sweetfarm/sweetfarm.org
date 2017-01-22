@@ -12,7 +12,8 @@
 		<!-- Place favicon.ico in the root directory -->
 		<link rel="stylesheet" href="{{ page.css | default: '/css/default.css' }}">
 	</head>
-	<body style="background-image:url('{{ page.image }}')">
+	<body>
+		<figure style="background-image:url('{{ page.image }}')"></figure>
 		{% include header.html %}
 		<main>{{ content }}</main>
 		{% include footer.html %}

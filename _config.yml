@@ -6,6 +6,8 @@ baseurl: ""
 url: "https://www.sweetfarm.org"
 
 # Site defaults
+permalink: /news/:year/:month/:day/:title/
+
 defaults:
   - 
     scope:
@@ -13,6 +15,13 @@ defaults:
       type: residents
     values:
       layout: resident
+      css: /css/simple.css
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
       css: /css/simple.css
 
 # Custom Collections

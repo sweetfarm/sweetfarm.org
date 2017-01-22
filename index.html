@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-image: /img/sturgis-and-gizmo.jpg
+image: /img/chicken-with-pumpkin.jpg
 css: /css/index.css
 ---
 
@@ -11,15 +11,16 @@ css: /css/index.css
 		<h4>An animal sanctuary in Half Moon Bay</h4>
 	</copy>
 	<aside>
-		<h5>Providing sanctuary for both farm<br>and domestic animals in need</h5>
+		<h4>Providing sanctuary for both farm<br>and domestic animals in need</h4>
 		<a class="link-light" href="/about">Learn more about our mission &raquo;</a>
 	</aside>
 </section>
 
 <section>
 
-	{% include article.html header='Blog Post Title' subheader='With a subtitle' 
-		href='/news/todo' image='https://placekitten.com/g/1024/500' 
+	{% assign post = (site.posts | first) %}
+	{% include article.html header=post.title subheader=post.description
+		href=post.url image=post.image
 		alt_text='Check out our latest stories &raquo;' alt_href='/news' %}
 
 </section>
