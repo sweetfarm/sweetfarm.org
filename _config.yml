@@ -15,13 +15,13 @@ defaults:
       type: residents
     values:
       layout: resident
-      css: /css/simple.css
+      css: /css/resident.css
   -
     scope:
       path: ""
       type: posts
     values:
-      layout: post
+      layout: posts
       css: /css/simple.css
 
 # Custom Collections

@@ -10,3 +10,9 @@ a, a:hover, a:focus {
 address, em {
 	font-style: normal;
 }
+
+button {
+	display: inline-block;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}

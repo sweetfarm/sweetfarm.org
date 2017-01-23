@@ -4,5 +4,9 @@ layout: simple
 
 <div class="text-content">
 	{{ content }}
-	<center>TODO: donate button</center>
+	<form action="/get-involved" action="get">
+		<input type="hidden" name="sponsorship" value="{{ page.title }}" />
+		<label for="sponsor-button" class="font-header">Interested in sponsoring {{ page.title }}?</label>
+		<button id="sponsor-button" type="submit">Click Here To Learn How</button>
+	</form>
 </div>

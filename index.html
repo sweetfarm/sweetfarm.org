@@ -27,7 +27,7 @@ css: /css/index.css
 
 <section>
 
-	{% assign resident = (site.residents | sample) %}
+	{% assign resident = (site.residents | where: "title" , "Higgins") | first %}
 	{% assign resident_url = (resident.url | replace_first: 'index.html', '') %}
 	{% include article.html header=resident.title subheader=resident.description
 		href=resident_url image=resident.image size='half'

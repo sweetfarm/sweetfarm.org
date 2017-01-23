@@ -2,14 +2,9 @@
 @import 'sizes';
 
 article {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: column;
 	flex-flow: column;
-	background: none no-repeat center center/cover transparent;	
+	background: none no-repeat right center/cover transparent;	
 	text-transform: uppercase;
 	.subject {
 		color: $color-header-link;

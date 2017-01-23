@@ -23,7 +23,7 @@ figure {
 	width: 100%;
 	display: block;
 	position: absolute;
-	background: none center top/cover no-repeat scroll;
+	background: none right top/cover no-repeat scroll;
 	height: $size-hero-height;
 }
 
@@ -74,6 +74,23 @@ h6 {
 
 p {
     line-height: 2;
+}
+
+button {
+	line-height: 1;
+	letter-spacing: $size-letter-spacing-base;	
+	color: $color-button-text;
+	background-color: $color-button-background;
+	border: solid 2px $color-button-border;
+	border-radius: 10px;
+	padding: 1em 2em;
+	cursor: pointer;
+	@include font-sans(500);
+	&:hover, &:focus {
+		color: $color-button-text-hover;
+		background-color: $color-button-background-hover;
+		border-color: $color-button-border-hover;
+	}
 }
 
 section, main, .row {
@@ -137,7 +154,7 @@ section, .row {
 	&:after {
 		content: '';
 		display: block;
-		border: solid 1px $color-horizonal-rule;
+		border: solid 1px $color-horizontal-rule;
 		margin: $size-unit-double $size-unit 0;
 	}
 
