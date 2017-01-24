@@ -21,7 +21,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: posts
+      layout: post
       css: /css/simple.css
 
 # Custom Collections

@@ -29,7 +29,7 @@ gem install bundler
 
 ### Installing Octopress
 
-This project is a Jekyll blog that runs on Github's CDN. As such, we can use the `octopress`
+This project is a Jekyll blog that runs on Github's CDN. As such, we can use the `jekyll`
 tool to manage the project's content, deployment and administration. We can use bundler
 to install this dependency, along with every other tool we'll need:
 
