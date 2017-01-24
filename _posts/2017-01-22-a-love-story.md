@@ -10,4 +10,6 @@ A few months later in February of 2016, Sweet Farm became aware of a steer by th
  
 Since joining Sweet Farm, Gizmo and Sturgis have quickly grown attached to each other as both are large herd animals.  Chasing each other around the pastures like a couple of 1000lb puppies, bathing each other, or taking up shelter together on a rainy day are just some of the many ways these two show their interspecies friendship on a daily basis.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WzJxtAdveG0" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-holder">
+	<iframe src="https://www.youtube.com/embed/WzJxtAdveG0" frameborder="0" allowfullscreen></iframe>
+</div>

@@ -100,10 +100,19 @@ section, main, .row {
 	display: flex;
 }
 
-iframe {
-    position: relative;
-    display: block;
-    margin: $size-unit auto;
+.iframe-holder {
+	width: 100%;
+	position: relative;
+	padding-top: 59%;
+	iframe {
+	    display: block;
+	    position: absolute;
+	    padding: $size-unit;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	}
 }
 
 main {
