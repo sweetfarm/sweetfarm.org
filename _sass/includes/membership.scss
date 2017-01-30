@@ -10,11 +10,10 @@
 		margin-bottom: 1em;
 	}
 	display: block;
-	width: 66%;
+	width: 100%;
 	margin: $size-unit auto;
-	padding-bottom: $size-unit;
-	border: solid 2px $color-text-base;
-	border-radius: 25px;
+	padding-bottom: $size-unit-double;
+	border-bottom: solid 2px $color-text-base;
 	button {
 		width: 95%;	
 	}

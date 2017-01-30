@@ -227,11 +227,12 @@ small {
 			padding-top: $size-unit;
 		}
 	}
+
 	a {
-		color: $color-content-link;
-		font-weight: 500;
-		&:hover {
-			color: $color-content-link-hover;
+		font-weight: 600;
+		text-decoration: underline;
+		&:hover, &:focus {
+			text-decoration: none;
 		}
 	}
 

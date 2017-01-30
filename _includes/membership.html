@@ -3,5 +3,5 @@
 	<small>One-time donation of ${{ include.one_time }}, or ${{ include.recurring }}/month</small>
 	<ul>{% for benefit in include.benefits %}<li>{{ benefit }}</li>{% endfor %}</ul>
 	{% capture button %}Become A {{ include.type }} Member{% endcapture %}
-	{% include donation.html amount=10 recurring=1 button=button %}
+	{% include donation.html amount=include.recurring recurring=1 button=button %}
 </div>

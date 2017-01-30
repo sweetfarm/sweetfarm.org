@@ -22,4 +22,3 @@ With as little as a one-time donation of $40, or a $10/month subscription, you c
 {% include membership.html type='Champion Level' one_time=500 recurring=50 benefits=benefits %}
 
 <small>Sweet Farm is 501(c)3 non-profit organization. It is run entirely by grants and donations from the public. Donations go directly to feeding and caring for the animals, as well as funding our humane education and community outreach programs - helping spread our message of compassion to the public. All donations are tax deductible as allowed by law.</small>
-
