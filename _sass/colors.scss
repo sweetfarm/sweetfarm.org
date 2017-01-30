@@ -22,6 +22,11 @@ $color-text-base: $color-green-charlston;
 $color-content-link: $color-green-lincoln;
 $color-content-link-hover: $color-green-avocado;
 
+$color-subheader-border: $color-text-base;
+$color-subheader-link: fade-out($color-text-base, 0.1);
+$color-subheader-link-hover: $color-white;
+$color-subheader-background-color: $color-text-base;
+
 $color-button-background: fade-out($color-white, 1);
 $color-button-background-hover: fade-out($color-white, 0);
 $color-button-text: $color-white;

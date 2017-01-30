@@ -1,14 +1,11 @@
 @import 'sizes';
+@import 'includes/map';
 
 footer {
 	text-transform: uppercase;
 	padding: $size-unit-double 0;
 	#logo {
 		width: 100px;
-	}
-	#map {
-		background: url(/img/staticmap.jpeg) center center/auto 100% no-repeat scroll transparent;
-		margin: 0 $size-unit;
 	}
 	address {		
 		font-size: 1.5em;

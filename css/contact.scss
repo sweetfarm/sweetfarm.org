@@ -1,8 +1,12 @@
 ---
 ---
 
-@import 'layouts/simple';
+@import 'layouts/about';
 
-body {
-	background-position: top right;
+.text-content {
+	.map {
+		margin: $size-unit;
+		display: block;
+		height: 40vh;
+	}
 }

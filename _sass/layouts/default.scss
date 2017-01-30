@@ -144,8 +144,7 @@ main {
 	}
 	& > section {
 		min-height: $size-section-height;
-		&:first-child {
-			height: $size-hero-height;
+		&:first-child {			
 			padding: $size-unit $size-unit-double;
 			copy {
 				top: 50%;
@@ -158,6 +157,29 @@ main {
 	}
 }
 
+#subheader, .text-content {
+	box-shadow: 0 0 0 0 fade-out(black, 1);
+}
+
+#subheader {
+	display: flex;
+	flex-flow: row;
+	font-size: 0.7em;
+	overflow: hidden;
+	a {
+		flex-grow: 1;
+		text-transform: uppercase;
+		text-align: center;
+		color: $color-text-base;
+		color: $color-subheader-link;
+		padding: $size-unit-half $size-unit;
+		&:hover, &:focus {
+			color: $color-subheader-link-hover;
+			background-color: $color-subheader-background-color;
+		}
+	}
+}
+
 section, .row {
 	flex-flow: row wrap;
 	& > * {
@@ -166,10 +188,11 @@ section, .row {
 }
 
 .text-content {
-	box-shadow: 0 0 0 0 fade-out(black, 1);
 	padding: $size-unit $size-unit-double $size-unit-double;
 	h5, p, img {
 		width: 100%;
+	}
+	h5, p {
 		padding: $size-unit-half $size-unit;
 	}
 	h6 {
@@ -177,6 +200,9 @@ section, .row {
 	}
 	h5 {
 		padding-top: $size-unit-double;
+		&:first-child {
+			padding-top: $size-unit;
+		}
 	}
 	a {
 		color: $color-content-link;

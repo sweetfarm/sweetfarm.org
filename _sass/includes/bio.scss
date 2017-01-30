@@ -1,0 +1,21 @@
+@import "sizes";
+
+.bio {
+	flex-grow: 1;
+	max-width: 50%;	
+	padding: $size-unit;
+	h3, h5 {
+		padding: 0;		
+	}
+	p {
+		text-align: justify;
+	}
+	img {
+		width: 33%;
+		float: left;
+		border-radius: 50%;
+		-webkit-shape-outside:circle();
+  		shape-outside:circle();
+  		margin: 0 1em 1em 0;
+	}
+}
