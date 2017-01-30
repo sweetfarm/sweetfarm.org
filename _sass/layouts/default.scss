@@ -113,6 +113,7 @@ ul {
 	cursor: pointer;
 	@include font-sans(600);
 	color: $color-button-text;
+	text-decoration: none !important;
 	&:hover, &:focus {
 		color: $color-button-text-hover;
 		background-color: $color-button-background-hover;
