@@ -2,22 +2,32 @@
 @import 'sizes';
 
 article {
-	display: flex;
-	flex-flow: column;
-	background: none no-repeat right center/cover transparent;	
+	position: relative;
+	background-color: black;
 	text-transform: uppercase;
+	aside {
+		display: flex;
+		flex-flow: column;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
 	.subject {
-		color: $color-header-link;
-		background-color: $color-overlay-light;
 		margin-bottom: auto;
-		&:hover {
-			color: $color-header-link-hover;
-			background-color: fade-in($color-overlay-light, 1);
-		}
+		flex-grow: 0;
 	}
 	.subject, .alt {
+		color: $color-white;
+		display: block;
+		background-color: fade-out($color-background, 0.8);
 		padding: $size-unit $size-unit-double;
-		flex-grow: 0;		
+		&:hover, &:focus {
+			color: $color-text-base;
+			background-color: fade-out($color-background, 0);
+		}
 	}
 	.alt {
 		margin-top: auto;

@@ -1,28 +1,26 @@
 ---
 ---
 
+@import 'sizes';
 @import 'fonts';
 @import 'layouts/default';
 @import 'includes/article';
 
-main > section:first-child {
+#hero-text {
 	text-align:center;
+	margin-bottom: auto;
+	color: $color-title;
 	copy {
-		margin-bottom: auto;
-		color: $color-title;
-		h1 {
-			font-size: 4em;
-			@include font-handwriting;
-		}
+		top: 50%;
+		display: block;
+		position: relative;
+		transform: translateY(-48%);
 	}
-	aside {
-		width: 100%;
-		margin-top: auto;
-		flex-grow: 0;
-		color: $color-background;
-		text-transform: uppercase;
-		h4 {
-			padding-bottom: $size-unit-half;
-		}
+	h1 {
+		font-size: 5em;
+		@include font-logo;
+	}
+	.button {
+		margin-top: 2em;
 	}
 }

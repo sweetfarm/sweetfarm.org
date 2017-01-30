@@ -3,7 +3,9 @@ layout: frame
 ---
 
 <body>
-	<figure style="background-image:url('{{ page.image }}')"></figure>
+	<div id="hero" class="hero-height">
+		<figure style="background-image:url('{{ page.image }}')"></figure>
+	</div>
 	{% include header.html %}
 	<main>{{ content }}</main>
 	{% include footer.html %}

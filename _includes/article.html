@@ -1,9 +1,14 @@
-<article class="size-{{ include.size | default: 'full' }}" style="background-image:url('{{ include.image }}')">
-	<a class="subject" href="{{ include.href }}">
-		<h2>{{ include.header }}</h1>
-		<h4>{{ include.subheader }}</h3>
-	</a>
-	<a class="alt link-light text-shadow" href="{{ include.alt_href }}">
-		{{ include.alt_text }}
-	</a>
+<article class="size-{{ include.size | default: 'full' }}">
+	<figure style="background-image:url('{{ include.image }}')"></figure>
+	<aside>
+		<a class="subject" href="{{ include.href }}">
+			<h3>{{ include.header }}</h3>
+			<h5>{{ include.subheader }}</h5>
+		</a>
+		{% if include.alt_text %}
+		<a class="alt" href="{{ include.alt_href }}">
+			{{ include.alt_text }}
+		</a>
+		{% endif %}
+	</aside>
 </article>

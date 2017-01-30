@@ -2,4 +2,10 @@
 
 main > section:first-child {
 	color: $color-title;
+	text-align: center;
+	h1 {
+		width: 100%;
+		display: block;
+		padding-top: $size-hero-height/2.5;
+	}
 }

@@ -16,15 +16,30 @@ body {
 	background-color: $color-background;
 }
 
+.hero-height {
+	height: $size-hero-height;
+	min-height: 380px;
+}
+
+#hero {
+	display: block;
+	position: absolute;	
+	background-color: black;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+}
+
 figure {
 	top: 0;
 	left: 0;
 	z-index: 1;
 	width: 100%;
-	display: block;
+	height: 100%;
+	opacity: 0.7;
 	position: absolute;
-	background: none right top/cover no-repeat scroll;
-	height: $size-hero-height;
+	background: none center center/cover no-repeat scroll;
 }
 
 body, header, footer {
@@ -36,12 +51,12 @@ body, .font-base {
 	@include font-sans;
 }
 
-em, b, strong, .font-emphasis {
-	@include font-sans(500);
+h4, h5, h6, em, b, strong, .font-emphasis {
+	@include font-sans(600);
 }
 
-h1, h2, h3, h4, h5, h6, .font-header {	
-	@include font-sans(800);
+h1, h2, h3, .font-header {	
+	@include font-sans(900);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,16 +91,18 @@ p {
     line-height: 2;
 }
 
-button {
+.button, button {
 	line-height: 1;
+	display: inline-block;
+	text-transform: uppercase;
 	letter-spacing: $size-letter-spacing-base;	
-	color: $color-button-text;
 	background-color: $color-button-background;
 	border: solid 2px $color-button-border;
-	border-radius: 10px;
+	border-radius: 25px;
 	padding: 1em 2em;
 	cursor: pointer;
-	@include font-sans(500);
+	@include font-sans(600);
+	color: $color-button-text;
 	&:hover, &:focus {
 		color: $color-button-text-hover;
 		background-color: $color-button-background-hover;
@@ -119,12 +136,24 @@ main {
 	z-index: 2;
 	position: relative;
 	flex-flow: column;
+	& > * {
+		box-shadow: 0 0 $size-unit-double 0 rgba(0,0,0,0.2);
+		&:first-child {
+			box-shadow: 0 0 0 0 rgba(0,0,0,0);
+		}
+	}
 	& > section {
 		min-height: $size-section-height;
 		&:first-child {
-			margin-top: -$size-header-height;
 			height: $size-hero-height;
-			padding: ($size-header-height + $size-unit) $size-unit-double $size-unit;
+			padding: $size-unit $size-unit-double;
+			copy {
+				top: 50%;
+				display: block;
+				position: relative;
+				transform: translateY(-50%);
+				text-align: center;
+			}
 		}
 	}
 }
@@ -136,11 +165,8 @@ section, .row {
 	}
 }
 
-.text-shadow {	
-	text-shadow: 0 0 26px rgba(0,0,0,0.5);
-}
-
 .text-content {
+	box-shadow: 0 0 0 0 fade-out(black, 1);
 	padding: $size-unit $size-unit-double $size-unit-double;
 	h5, p, img {
 		width: 100%;

@@ -3,12 +3,15 @@
 
 header {
 	z-index: 3;
-	font-size: 1.25em;
+	font-size: 0.8em;
 	position: relative;
-	padding: $size-unit-half $size-unit;
-	height: $size-header-height;
-	background-color: $color-overlay-light;
+	padding: $size-unit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	nav a {
+		line-height: 22px;
 		text-align: center;
 		padding: $size-unit-half $size-unit;
 		color: $color-header-link;

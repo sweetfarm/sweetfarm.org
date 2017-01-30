@@ -5,16 +5,13 @@ image: /img/chicken-with-pumpkin.jpg
 css: /css/index.css
 ---
 
-<section class="text-shadow">
+<div id="hero-text" class="hero-height">
 	<copy>
 		<h1>Sweet Farm</h1>
 		<h4>An animal sanctuary in Half Moon Bay</h4>
+		<a class="button" href="/about">Learn more about our mission &raquo;</a>
 	</copy>
-	<aside>
-		<h4>Providing sanctuary for both farm<br>and domestic animals in need</h4>
-		<a class="link-light" href="/about">Learn more about our mission &raquo;</a>
-	</aside>
-</section>
+</div>
 
 <section>
 
@@ -34,7 +31,7 @@ css: /css/index.css
 		alt_text='Meet more animal ambassadors &raquo;' alt_href='/residents' %}
 
 	{% assign getinvolved = (site.pages | where: "title" , "Get Involved" | first) %}
-	{% include article.html header='Find ways to help' subheader='Become a sponsor today' 
+	{% include article.html header='ways to help' subheader='Become a sponsor today' 
 		href='/get-involved' image=getinvolved.image size='half'
 		alt_text='Learn about sponsorship options &raquo;' alt_href='/get-involved' %}
 
