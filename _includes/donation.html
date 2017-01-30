@@ -1,0 +1,10 @@
+<form class="donation" action="https://www.classy.org/checkout/donation" method="get">		
+	<input type="hidden" name="eid" value="{{ include.eid || default: '115740' }}" />
+	<input type="hidden" name="amount" value="{{ include.amount | default: 75 }}" />
+	<input type="hidden" name="recurring" value="{{ include.recurring | default: 1 }}" />
+	{% if include.label %}
+	<label for="sponsor-button" class="font-header">{{ include.label }}</label>
+	{% endif %}
+	<div></div>
+	<button id="sponsor-button" class="button button-dark" type="submit">{{ include.button | default: 'Become A Sponsor Today' }}</button>
+</form>

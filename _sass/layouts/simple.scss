@@ -6,6 +6,13 @@ main > section:first-child {
 	h1 {
 		width: 100%;
 		display: block;
-		padding-top: $size-hero-height/2.5;
+		margin-top: auto;
+	}
+	h4 {
+		margin-bottom: auto;
+	}
+	h1, h4 {
+		flex-grow: 0;
+		width: 100%;
 	}
 }

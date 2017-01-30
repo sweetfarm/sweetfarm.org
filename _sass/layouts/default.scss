@@ -91,6 +91,16 @@ p {
     line-height: 2;
 }
 
+ul {
+	padding: $size-unit $size-unit-double;
+}
+
+.button, button, a {
+	&:focus {
+		outline: 0;
+	}
+}
+
 .button, button {
 	line-height: 1;
 	display: inline-block;
@@ -107,6 +117,15 @@ p {
 		color: $color-button-text-hover;
 		background-color: $color-button-background-hover;
 		border-color: $color-button-border-hover;
+	}
+	&.button-dark {
+		color: $color-text-base;
+		background-color: fade-out($color-text-base, 1);
+		border-color: $color-text-base;
+		&:hover, &:focus {
+			background-color: fade-out($color-text-base, 0);
+			color: $color-white;
+		}
 	}
 }
 
@@ -187,18 +206,22 @@ section, .row {
 	}
 }
 
+small {
+	color: lighten($color-text-base, 10%);
+}
+
 .text-content {
 	padding: $size-unit $size-unit-double $size-unit-double;
-	h5, p, img {
+	small, h4, h5, p, img {
 		width: 100%;
 	}
-	h5, p {
+	h4, h5, p, small {
 		padding: $size-unit-half $size-unit;
 	}
-	h6 {
+	h4, h6 {
 		padding: 0 $size-unit;	
 	}
-	h5 {
+	h4, h5 {
 		padding-top: $size-unit-double;
 		&:first-child {
 			padding-top: $size-unit;

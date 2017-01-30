@@ -11,6 +11,9 @@ footer {
 		font-size: 1.5em;
 		padding: $size-unit 0;
 	}	
+	.map {
+		margin: 0 $size-unit;
+	}
 	section {
 		padding: $size-unit (2 * $size-unit);
 	}

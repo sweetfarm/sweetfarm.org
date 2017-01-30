@@ -4,7 +4,7 @@ layout: default
 
 <section class="hero-height">
 	<h1>{{ page.title }}</h1>
-	<h4>{{ page.description }}</h4>
+	<h4>{{ page.description | default: '&nbsp;' }}</h4>
 </section>
 
 {{ content }}

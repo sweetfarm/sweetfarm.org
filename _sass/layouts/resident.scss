@@ -1,13 +1,2 @@
 @import 'layouts/simple';
-
-form {
-	text-align: center;
-	label, button {
-		display: block;
-		margin: $size-unit auto;
-	}
-	button {
-		width: 50%;
-		font-size: $size-header-5;
-	}
-}
+@import 'includes/donation';

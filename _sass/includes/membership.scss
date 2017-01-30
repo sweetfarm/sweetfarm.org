@@ -1,0 +1,21 @@
+@import 'colors';
+@import 'sizes';
+@import 'includes/donation';
+
+.membership {
+	h5 {
+		padding-bottom: 0;
+	}
+	li {
+		margin-bottom: 1em;
+	}
+	display: block;
+	width: 66%;
+	margin: $size-unit auto;
+	padding-bottom: $size-unit;
+	border: solid 2px $color-text-base;
+	border-radius: 25px;
+	button {
+		width: 95%;	
+	}
+}

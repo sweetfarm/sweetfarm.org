@@ -1,0 +1,12 @@
+form.donation {
+	text-align: center;
+	label {
+		margin: 1em auto;
+	}
+	label, button {
+		display: inline-block;		
+	}
+	button {
+		font-size: $size-header-5;
+	}
+}
