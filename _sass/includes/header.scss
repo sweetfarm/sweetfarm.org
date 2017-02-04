@@ -10,6 +10,9 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
+	@media (max-width: $size-media-m) {
+		padding: ($size-unit-half/2) $size-unit;
+	}
 	nav a {
 		line-height: 22px;
 		text-align: center;
@@ -18,6 +21,11 @@ header {
 		text-transform: uppercase;
 		&:hover, &:focus, &:active, &.active {
 			color: $color-header-link-hover;
+		}
+		@media (max-width: $size-media-m) {
+			&.button {
+				border-radius: 0 0 25px 25px;
+			}
 		}
 	}
 }

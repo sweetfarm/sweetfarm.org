@@ -19,6 +19,9 @@ body {
 .hero-height {
 	height: $size-hero-height;
 	min-height: 380px;
+	@media (max-width: $size-media-m) {
+		min-height: 428px;
+	}
 }
 
 #hero {
@@ -160,12 +163,15 @@ main {
 		box-shadow: 0 0 $size-unit-double 0 rgba(0,0,0,0.2);
 		&:first-child {
 			box-shadow: 0 0 0 0 rgba(0,0,0,0);
+			@media (max-width: $size-media-m) {
+				padding-top: ($size-unit * 2.5) !important;
+			}
 		}
 	}
 	& > section {
 		min-height: $size-section-height;
 		&:first-child {			
-			padding: $size-unit $size-unit-double;
+			padding: $size-unit $size-unit-double;			
 			copy {
 				top: 50%;
 				display: block;
